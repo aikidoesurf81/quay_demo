@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { ApisService } from './services/apis.service';
+
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,24 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'quay';
+
+  cards: any[];
+  image: string;
+
+  constructor(
+    public apisService: ApisService,
+  ) { 
+    this.getCards();
+   }
+
+  
+  getCards(){
+    this.apisService.GetCards().subscribe((data:any) => {
+      console.log('data', data);
+      this.cards = data.Items;
+    })
+  }
+
+
 }
+

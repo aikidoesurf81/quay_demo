@@ -1,0 +1,91 @@
+.navbar {
+    width: 100%;
+    background-color: black;
+    height: 80px;
+}
+
+.quay_logo{
+    height: 60px;
+    width: 215px;
+    padding: 10px;
+}
+
+.contents_container{
+    background-color: #333;
+    height: calc(100vh - 130px);
+}
+
+.cards_container{
+    padding: 0;
+    max-width: 1160px;
+    margin: auto;
+}
+
+.subscription_bar {
+    height: 50px;
+    width: 100%;
+    text-align:center;
+    background-color: black;
+}
+
+.card {
+    margin-right: 10px;
+    padding: 10px;
+    border: 1px solid transparent;
+    margin-top: 10px;
+    min-width: 235px;
+    width: 257px;
+    height: 174px;
+    opacity: 0.95;
+    z-index: 0;
+    cursor: pointer;
+    background-color: rgb(0, 187, 0);
+    border-color: green;
+    color: rgb(17, 17, 17);
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.card:hover{
+    background-color: white;
+    color: green;
+}
+
+.id_label {
+font-size: 32px;
+text-align: center;
+}
+
+.timestamp_label {
+    font-size: 16px;
+    text-align: center;
+}
+
+.click_for_image_label{
+    font-size: 16px;
+    text-align: center;
+}
+
+.large_image {
+    width: 100%;
+    height: calc(100vh - 356px);
+    margin: auto;
+    display: block;
+    margin: 10px auto;
+    object-fit: contain;
+}
+
+.subscription_button {
+    color: white;
+    background-color: black;
+    border: none;
+    padding: 16px;
+    font-size: 15px;
+    width: 400px;
+    cursor: pointer;
+}
+
+.subscription_button:hover {
+    background-color: white;
+    color: black;
+}
